@@ -1,0 +1,11 @@
+name: AvaChatfilter
+version: "1.1"
+author: Nightcorex
+main: de.nightcorex.avaChatfilter.Main
+
+commands:
+  chatfilter:
+    help: Displays all possible commands in a short overview. Is also the default method if no parameter exists
+    show: Displays all phrases contained in the blacklist
+    add: Adds a phrase to the blacklist
+    remove: Removes a phrase from the blacklist

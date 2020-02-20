@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="AvaChatfilter:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/AvaChatfilter_jar</output-path>
+    <root id="archive" name="AvaChatfilter.jar">
+      <element id="module-output" name="AvaChatfilter" />
+    </root>
+  </artifact>
+</component>
