@@ -1,5 +1,6 @@
 package de.nightcorex.avaChatfilter;
 
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
@@ -16,6 +17,10 @@ public class TypeEvents implements Listener {
 
     @EventHandler
     public void onChat(AsyncPlayerChatEvent event){
+
+        Player p = event.getPlayer();
+        p.sendMessage("Das ChatEvent wurde erkannt");
+
         if(plugin.existsInBlacklist(event.getMessage())){
             //Mach jetzt eine genauere Analyse des Satzes um die "bösen" Stellen zu finden.
             // Sollte es performance Probleme mit diesem Ansatz geben, so kann man einfach die Message gar nicht erst ausgeben.
