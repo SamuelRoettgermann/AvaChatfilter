@@ -17,7 +17,7 @@ public class BlacklistSupervisor implements CommandExecutor {
         add = new AddToBlacklist(plugin);
         help = new BlacklistHelp(plugin);
         show = new BlacklistShow(plugin);
-        remove = new BlacklistRemove(plugin);
+        remove = new BlacklistRemove(plugin); 
     }
 
 
