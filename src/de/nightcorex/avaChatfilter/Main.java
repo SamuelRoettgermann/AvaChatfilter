@@ -94,7 +94,12 @@ public class Main extends JavaPlugin {
 
     public boolean existsInBlacklist(String phrase) {
         phrase = phrase.toLowerCase();
-        return blacklist.parallelStream().anyMatch(phrase::contains);
+        for(String bl : blacklist){
+            if(phrase.contains(bl))
+                return true;
+        }
+
+        return false;
     }
 
 

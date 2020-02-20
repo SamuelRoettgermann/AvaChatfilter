@@ -34,7 +34,7 @@ public class BlacklistRemove {
                 return false;
             }
         } else {
-            System.out.println(deleteElement(removal) ? (removal + " wurde aus der Blacklist entfernt") :
+            System.out.println(deleteElement(removal) ? ('\"' + removal + "\" wurde aus der Blacklist entfernt") :
                     ('\"' + removal + "\" existierte nicht in der Liste"));
             return true;
         }
